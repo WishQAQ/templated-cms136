@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="/css/style_cn.css" type="text/css" />
+<script type="text/javascript" src="/jquery/jquery-fy.js"></script>
+<script type="text/javascript" src="/inc/function.js"></script>
+<link type="text/css" href="/jquery/lightbox2.51/css/lightbox.css" rel="stylesheet" />
+<script type="text/javascript" src="/jquery/lightbox2.51/js/lightbox.js"></script>
+<script type="text/javascript">
+
+$(function(){
+
+	$(".editorc img").each(function(){if (parseInt($(this).css("width"))>$(".editorc").width()) $(this).css({"width":"100%","height":"auto"});});
+
+});
+
+</script>
+</head>
+<body>
+<div id="main"> {dede:include filename="head.htm"/}
+  <script type="text/javascript">
+$(function(){
+	try{
+		var current=5;
+		$(".nav_out,.nav_over").attr("class","nav_out").eq(current).attr("class","nav_over");
+	}
+	catch(e){
+	}
+	$("#nav li").hover(function(){$(this).find("p").slideToggle(300);});
+});
+</script>
+  <div id="header_mar"></div>
+  <div id="title_menu_bg">
+    <div id="title_menu_blk"><strong id="title_str1">ABOUT US</strong><strong id="title_str2">关于我们</strong>
+      <p id="title_menu"> {dede:channel row="10" type="son" col="1" currentstyle="<a href='~typelink~' class='title_menu_over'>~typename~</a>" } <a href="[field:typeurl/]">[field:typename/]</a> {/dede:channel} </p>
+    </div>
+  </div>
+  <div id="content">
+    <div id="showtext">
+      <div class="editorc">
+
+	  
+	  <div class="Container">
+    <div class="Title-group">
+      <h2 class="title-sub c-black">在线提交留言<span>Give Us A Project OnLine</span></h2>
+      <p>“尊敬的客户，我们将在收到您信息的24小时内和您沟通确认。”</p>
+    </div>
+    <div class="project-form">
+      <article id="post-9" class="post-9 page type-page status-publish hentry">
+        <div class="entry-content">
+          <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="1" />
+<input type="hidden" name="do" value="2" />
+
+            <ul>
+              <li id="fm-item-text-532c32876c09e">
+                <label style="display:block;width:px;">您的名称					&nbsp;<em>*</em> </label>
+                <input type="text" name="ndxm" id="ndxm" style="width:px;" maxlength="100" placeholder="请输入您的名称">
+              </li>
+              <li id="fm-item-text-532c32b3a8226">
+                <label style="display:block;width:px;">您的电话					&nbsp;<em>*</em> </label>
+                <input type="text" name="nddh" id="nddh" style="width:px;" placeholder="请输入您的电话号码">
+              </li>
+              <li id="fm-item-text-532c32d5b870d">
+                <label style="display:block;width:px;">您的邮箱 </label>
+                <input type="text" name="ndyx" id="ndyx" style="width:px;" placeholder="请输入您的邮箱地址">
+              </li>
+              <li id="fm-item-text-532c3390c57ce">
+                <label style="display:block;width:px;">您的QQ </label>
+                <input type="text" name="ndqq" id="ndqq" style="width:px;" placeholder="请输入您的QQ号码">
+              </li>
+              <li id="fm-item-textarea-532c33b869a6d">
+                <label style="display:block;width:px;">具体内容					&nbsp;<em>*</em> </label>
+                <textarea name="ndnr" id="ndnr" style="width:910px;height:px;" placeholder="请输入您的需求"></textarea>
+              </li>
+            </ul>
+            <div>
+              <input type="submit" name="submit" id="submit" class="submit" value="猛击这里提交">
+            </div>
+            <input type="hidden" name="dede_fields" value="ndxm,text;nddh,text;ndyx,text;ndqq,text;ndnr,multitext" />
+<input type="hidden" name="dede_fieldshash" value="37d7cbca77016f5c4c29e0f153d9a1d6" />
+          </form>
+        </div>
+        <!-- .entry-content -->
+        <footer class="entry-meta"> </footer>
+        <!-- .entry-meta --> 
+      </article>
+      <!-- #post --> 
+      
+    </div>
+  </div>
+	  
+	  </div>
+    </div>
+  </div>
+ {dede:include filename="footer.htm"/}
+</div>
+</body>
+</html>

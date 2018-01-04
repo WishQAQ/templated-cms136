@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{dede:global.cfg_webname/}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="css/style_cn.css" type="text/css" />
+<script type="text/javascript" src="jquery/jquery-fy.js"></script>
+<script type="text/javascript" src="inc/function.js"></script>
+</head>
+<body>
+<div id="main">
+  {dede:include filename="head.htm"/}
+  <script type="text/javascript">
+$(function(){
+	try{
+		var current=0;
+		$(".nav_out,.nav_over").attr("class","nav_out").eq(current).attr("class","nav_over");
+	}
+	catch(e){
+	}
+	$("#nav li").hover(function(){$(this).find("p").slideToggle(300);});
+});
+</script>
+  <div id="flash_blk">
+    <div id="flash">
+      <p><img src="images/banner/1.jpg" /></p>
+      <p><img src="images/banner/2.jpg" /></p>
+      <p><img src="images/banner/3.jpg" /></p>
+    </div>
+    <div id="flash_button"></div>
+  </div>
+  <script type="text/javascript" src="jquery/jquery.cycle.all.js"></script>
+  <script type="text/javascript">
+$(function(){
+	$('#flash').cycle({ 
+		fx:'fade',
+		pager:'#flash_button'
+	});
+})
+</script>
+  <div id="iabout_bg">
+    <div id="iabout_blk">
+      <div id="iabout_menu"> <strong>关于我们</strong> 
+	  {dede:type typeid='2'}<a href='[field:typeurl/]'>[field:typename/]</a>{/dede:type}
+	  {dede:type typeid='3'}<a href='[field:typeurl/]'>[field:typename/]</a>{/dede:type}
+	  {dede:type typeid='4'}<a href='[field:typeurl/]'>[field:typename/]</a>{/dede:type}
+	  </div>
+      <strong id="iabout_title">公司简介</strong>
+      <div id="iabout">
+        <p>某某家居有限公司是国内率先提出“智能学习桌”概念的科技型创新企业，总部位于广州；主要负责智能人体工程学书桌椅以及配套产品的研发、生产及全球同步营销推广，公司拥有国内一流的研发、生产、营销团队，在探索与实践少儿健康、智能学习桌领域中遥遥领先于同行，特别是其独特创新的产品设计以及差异化的O2O商业模式，彻底颠覆了传统商业思维，重新定义了学习桌椅的行业标准。具有使命感的星博人，在重视自身发展的同时，更关心中国乃至全球的少儿在学习中的健康问题，首要任务就是建立一套让孩子健康成长、快乐学习的整体解决方案...</p>
+      </div>
+    </div>
+  </div>
+  <div id="inews_bg">
+    <div id="inews_blk"> <strong id="inews_title">新闻资讯</strong>
+      <script type="text/javascript" src="inc/scrollpic.js"></script>
+      <p id="inews_menu">
+	  {dede:type typeid='7'}<span>[field:typename/]</span>{/dede:type}&nbsp;/&nbsp;{dede:type typeid='8'}<span>[field:typename/]</span>{/dede:type}</p>
+      <div class="inews">
+        {dede:arclist row="1" typeid="7" titlelen="30" infolen="300"}
+		<dl class="inews_com">
+          <dt><a href="[field:arcurl /]" target="_blank"><img src="[field:picname/]" /></a></dt>
+          <dd><strong><a href="[field:arcurl /]" title="[field:title /]" target="_blank">[field:title /]</a></strong><span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span>
+            <p>[field:infos/]...</p>
+            <a href="[field:arcurl /]" class="a" target="_blank">查看详情 &gt;&gt;</a></dd>
+        </dl>
+		{/dede:arclist}
+        <div class="inews_list" id="inews_list_1">
+          {dede:arclist row="9" typeid="7" titlelen="30" infolen="300"}
+		  <dl>
+            <dt><a href="[field:arcurl /]" target="_blank"><img src="[field:picname/]" /></a></dt>
+            <dd><strong><a href="[field:arcurl /]" title="[field:title /]" target="_blank">[field:title /]</a></strong><span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span>
+              <p>[field:infos/]...</p>
+            </dd>
+          </dl>
+		  {/dede:arclist}
+        </div>
+        <span class="inews_list_up" id="inews_list_1_up"></span><span class="inews_list_down" id="inews_list_1_down"></span>
+        <script type="text/javascript">var ScrollImage1 = new ScrollPic();ScrollImage1.scrollContId   = "inews_list_1";ScrollImage1.arrLeftId      = "inews_list_1_up";ScrollImage1.arrRightId     = "inews_list_1_down";ScrollImage1.frameWidth     = 424;ScrollImage1.pageWidth      = 438;ScrollImage1.upright        = true;ScrollImage1.speed          = 10;ScrollImage1.space          = 30;ScrollImage1.autoPlay       = true;ScrollImage1.autoPlayTime   = 5;ScrollImage1.circularly     = true;ScrollImage1.initialize();</script>
+      </div>
+      <div class="inews">
+        {dede:type typeid='7'}<span>[field:typename/]</span>{/dede:type}&nbsp;/&nbsp;{dede:type typeid='8'}<span>[field:typename/]</span>{/dede:type}</p>
+      <div class="inews">
+        {dede:arclist row="9" typeid="8" titlelen="30" infolen="300"}
+		<dl class="inews_com">
+          <dt><a href="[field:arcurl /]" target="_blank"><img src="[field:picname/]" /></a></dt>
+          <dd><strong><a href="[field:arcurl /]" title="[field:title /]" target="_blank">[field:title /]</a></strong><span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span>
+            <p>[field:infos/]...</p>
+            <a href="[field:arcurl /]" class="a" target="_blank">查看详情 &gt;&gt;</a></dd>
+        </dl>
+		{/dede:arclist}
+        <div class="inews_list" id="inews_list_2">
+          {dede:arclist row="1" typeid="8" titlelen="30" infolen="300"}
+		  <dl>
+            <dt><a href="[field:arcurl /]" target="_blank"><img src="[field:picname/]" /></a></dt>
+            <dd><strong><a href="[field:arcurl /]" title="[field:title /]" target="_blank">[field:title /]</a></strong><span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span>
+              <p>[field:infos/]...</p>
+            </dd>
+          </dl>
+		  {/dede:arclist}
+        </div>
+        <span class="inews_list_up" id="inews_list_2_up"></span><span class="inews_list_down" id="inews_list_2_down"></span>
+        <script type="text/javascript">var ScrollImage2 = new ScrollPic();ScrollImage2.scrollContId   = "inews_list_2";ScrollImage2.arrLeftId      = "inews_list_2_up";ScrollImage2.arrRightId     = "inews_list_2_down";ScrollImage2.frameWidth     = 424;ScrollImage2.pageWidth      = 438;ScrollImage2.upright        = true;ScrollImage2.speed          = 10;ScrollImage2.space          = 30;ScrollImage2.autoPlay       = true;ScrollImage2.autoPlayTime   = 5;ScrollImage2.circularly     = true;ScrollImage2.initialize();</script>
+      </div>
+    </div>
+  </div>
+  <div id="iproducts_bg">
+    <div id="iproducts_box">
+      <div id="iproducts_title"> <img src="images/iproducts_title.jpg" /><strong>产品专区</strong>
+        <ul id="iproducts_menu">
+          {dede:channel row="10" type="son" typeid="9"}
+		  <li>[field:typename/]</li>
+		  {/dede:channel}
+        </ul>
+      </div>
+    </div>
+    <div class="iproducts_blk">
+      <div class="iproducts anolines">
+        {dede:arclist row="6" typeid="10" titlelen="30"}
+		<p><img src="[field:picname/]" /><a href="[field:arcurl /]" title="[field:title /]" target="_blank"></a></p>
+		{/dede:arclist}
+      </div>
+      <div class="clear"></div>
+      <div class="iproducts anolines">
+        {dede:arclist row="6" typeid="11" titlelen="30"}
+		<p><img src="[field:picname/]" /><a href="[field:arcurl /]" title="[field:title /]" target="_blank"></a></p>
+		{/dede:arclist}
+      </div>
+      <div class="clear"></div>
+      <div class="iproducts anolines">
+        {dede:arclist row="6" typeid="12" titlelen="30"}
+		<p><img src="[field:picname/]" /><a href="[field:arcurl /]" title="[field:title /]" target="_blank"></a></p>
+		{/dede:arclist}
+      </div>
+      <div class="clear"></div>
+      <div class="iproducts anolines">
+        {dede:arclist row="6" typeid="13" titlelen="30"}
+		<p><img src="[field:picname/]" /><a href="[field:arcurl /]" title="[field:title /]" target="_blank"></a></p>
+		{/dede:arclist}
+      </div>
+      <div class="clear"></div>
+      <div class="iproducts anolines">
+        {dede:arclist row="6" typeid="14" titlelen="30"}
+		<p><img src="[field:picname/]" /><a href="[field:arcurl /]" title="[field:title /]" target="_blank"></a></p>
+		{/dede:arclist}
+      </div>
+      <div class="clear"></div>
+      <div class="iproducts anolines">
+        {dede:arclist row="6" typeid="15" titlelen="30"}
+		<p><img src="[field:picname/]" /><a href="[field:arcurl /]" title="[field:title /]" target="_blank"></a></p>
+		{/dede:arclist}
+      </div>
+      <div class="clear"></div>
+      <div class="iproducts anolines">
+        {dede:arclist row="6" typeid="16" titlelen="30"}
+		<p><img src="[field:picname/]" /><a href="[field:arcurl /]" title="[field:title /]" target="_blank"></a></p>
+		{/dede:arclist}
+      </div>
+      <div class="clear"></div>
+      <div class="iproducts anolines">
+        {dede:arclist row="6" typeid="17" titlelen="30"}
+		<p><img src="[field:picname/]" /><a href="[field:arcurl /]" title="[field:title /]" target="_blank"></a></p>
+		{/dede:arclist}
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div id="iphotos_box">
+    <p id="iphotos_title"><img src="images/iphotos_title.jpg" /></p>
+    <div id="iphotos_blk"> <span id="iphotos_button_left">&lt;</span> <span id="iphotos_button_right">&gt;</span>
+      <div id="iphotos">
+        {dede:arclist row="10" typeid="22" titlelen="30"}
+		<dl>
+          <dt><a href="[field:picname/]" target="_blank"><img src="[field:picname/]" title="[field:title /]" alt="[field:title /]" /></a></dt>
+          <dd><a href="[field:picname/]" target="_blank">[field:title /]</a></dd>
+        </dl>
+		{/dede:arclist}
+      </div>
+    </div>
+    <script type="text/javascript">
+
+		var ScrollImages = new ScrollPic();
+
+		ScrollImages.scrollContId   = "iphotos"; //内容容器ID
+
+		ScrollImages.arrLeftId      = "iphotos_button_left"; //左箭头ID
+
+		ScrollImages.arrRightId     = "iphotos_button_right"; //右箭头ID
+
+		ScrollImages.frameWidth     = 1228; //显示框宽度
+
+		ScrollImages.pageWidth      = 313; //翻页宽度
+
+		ScrollImages.upright        = false; //垂直滚动
+
+		ScrollImages.speed          = 10; //移动速度(单位毫秒，越小越快)
+
+		ScrollImages.space          = 40; //每次移动像素(单位px，越大越快)
+
+		ScrollImages.autoPlay       = true; //自动播放
+
+		ScrollImages.autoPlayTime   = 4; //自动播放间隔时间(秒)
+
+		ScrollImages.circularly     = true;
+
+		ScrollImages.initialize();
+
+		</script>
+  </div>
+  {dede:include filename="footer.htm"/}
+</div>
+<script type="text/javascript">
+
+function iNews(Val){
+
+	$("#inews_menu span").removeClass("inews_menu_over").eq(Val).addClass("inews_menu_over");
+
+	$(".inews").css("right","-2000px").eq(Val).css("right","0px");
+
+}
+
+function iProducts(Val){
+
+	$("#iproducts_menu li").removeClass("iproducts_menu_over").eq(Val).addClass("iproducts_menu_over");
+
+	$(".iproducts").hide().eq(Val).show();
+
+}
+
+$(function(){
+
+	$("#inews_menu span").on("click",function(){iNews($("#inews_menu span").index(this));});
+
+	$("#iproducts_menu li").on("click",function(){iProducts($("#iproducts_menu li").index(this));});
+
+	iNews(0);
+
+	iProducts(0);
+
+});
+
+</script>
+</body>
+</html>

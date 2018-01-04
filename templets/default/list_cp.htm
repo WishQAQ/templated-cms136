@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="/css/style_cn.css" type="text/css" />
+<script type="text/javascript" src="/jquery/jquery-fy.js"></script>
+<script type="text/javascript" src="/inc/function.js"></script>
+</head>
+<body>
+<div id="main">
+  {dede:include filename="head.htm"/}
+  <script type="text/javascript">
+$(function(){
+	try{
+		var current=3;
+		$(".nav_out,.nav_over").attr("class","nav_out").eq(current).attr("class","nav_over");
+	}
+	catch(e){
+	}
+	$("#nav li").hover(function(){$(this).find("p").slideToggle(300);});
+});
+</script>
+  <div id="header_mar"></div>
+  <div id="title_menu_bg">
+    <div id="title_menu_blk"><strong id="title_str1">PRODUCTS</strong><strong id="title_str2">产品专区</strong>
+      <p id="title_menu"> {dede:channel row="10" type="son" col="1" currentstyle="<a href='~typelink~' class='title_menu_over'>~typename~</a>" } <a href="[field:typeurl/]">[field:typename/]</a> {/dede:channel} </p>
+    </div>
+  </div>
+  <div id="content">
+    <div id="products_blk">
+      <div id="products" class="anolines">
+        {dede:list pagesize="9"}
+		<dl>
+          <dt><img src="[field:picname/]" /><a href="[field:arcurl/]" title="[field:title/]"></a></dt>
+          <dd><a href="[field:arcurl/]">[field:title/]</a></dd>
+        </dl>
+		{/dede:list}
+        <div class="clear"></div>
+		<div id="news_page">
+      <div class="fypage_blk">
+        <div class="fypage">{dede:pagelist listitem="index,pre,next,pageno" listsize="5"/}</div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  {dede:include filename="footer.htm"/}
+</div>
+</body>
+</html>

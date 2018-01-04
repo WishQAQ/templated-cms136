@@ -1,0 +1,18 @@
+<div id="header_blk">
+    <div id="header"> <a href="/"><img src="/images/logo.png" id="logo" /></a>
+      <p id="header_tel">全球财富热线：<strong>400-000-0000</strong></p>
+      <ul id="nav">
+        <li><a href="/" class="nav_out">首 页</a></li>
+		{dede:channelartlist typeid='top' row='8'}
+		<li>
+		<a href="{dede:field name='typeurl'/}" class="nav_out">{dede:field name='typename' /}</a>
+		  <p>
+		  {dede:channel type='son' noself='yes'}
+		  <a href="[field:typelink/]">[field:typename/]</a>
+		  {/dede:channel}
+		  </p>
+        </li>
+		{/dede:channelartlist}
+      </ul>
+    </div>
+  </div>

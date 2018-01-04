@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>我的网站</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="css/style_cn.css" type="text/css" />
+<script type="text/javascript" src="jquery/jquery-fy.js"></script>
+<script type="text/javascript" src="inc/function.js"></script>
+</head>
+<body>
+<div id="main">
+  <div id="header_blk">
+    <div id="header"> <a href="/"><img src="/images/logo.png" id="logo" /></a>
+      <p id="header_tel">全球财富热线：<strong>400-000-0000</strong></p>
+      <ul id="nav">
+        <li><a href="/" class="nav_out">首 页</a></li>
+		<li>
+		<a href="/a/about/" class="nav_out">关于我们</a>
+		  <p>
+		  
+		  <a href="/a/about/">公司简介</a>
+		  
+		  <a href="/a/qiyewenhua/">企业文化</a>
+		  
+		  <a href="/a/zizhirenzheng/">资质认证</a>
+		  
+		  </p>
+        </li><li>
+		<a href="/a/news/" class="nav_out">新闻资讯</a>
+		  <p>
+		  
+		  <a href="/a/news/">行业新闻</a>
+		  
+		  <a href="/a/gongsixinwen/">公司新闻</a>
+		  
+		  </p>
+        </li><li>
+		<a href="/a/chanpin/" class="nav_out">产品中心</a>
+		  <p>
+		  
+		  <a href="/a/chanpin/">酷炫学习桌</a>
+		  
+		  <a href="/a/yaobixuexizhuo/">摇臂学习桌</a>
+		  
+		  <a href="/a/tongbuxuexizhuo/">同步学习桌</a>
+		  
+		  <a href="/a/jingdianxuexizhuo/">经典学习桌</a>
+		  
+		  <a href="/a/wuzhaolongyi/">五爪龙椅</a>
+		  
+		  <a href="/a/zhihuichengchangyi/">智慧成长椅</a>
+		  
+		  <a href="/a/wucaishujia/">五彩书架</a>
+		  
+		  <a href="/a/shounagui/">收纳柜</a>
+		  
+		  </p>
+        </li><li>
+		<a href="/a/hezuo/" class="nav_out">加盟合作</a>
+		  <p>
+		  
+		  <a href="/a/hezuo/">合作流程</a>
+		  
+		  <a href="/a/hezuo/dianpu/">加盟店铺</a>
+		  
+		  </p>
+        </li><li>
+		<a href="/a/lianxi/" class="nav_out">联系我们</a>
+		  <p>
+		  
+		  <a href="/a/lianxi/">联系方式</a>
+		  
+		  <a href="/a/zaixianliuyan/">在线留言</a>
+		  
+		  </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript">
+$(function(){
+	try{
+		var current=0;
+		$(".nav_out,.nav_over").attr("class","nav_out").eq(current).attr("class","nav_over");
+	}
+	catch(e){
+	}
+	$("#nav li").hover(function(){$(this).find("p").slideToggle(300);});
+});
+</script>
+  <div id="flash_blk">
+    <div id="flash">
+      <p><img src="images/banner/1.jpg" /></p>
+      <p><img src="images/banner/2.jpg" /></p>
+      <p><img src="images/banner/3.jpg" /></p>
+    </div>
+    <div id="flash_button"></div>
+  </div>
+  <script type="text/javascript" src="jquery/jquery.cycle.all.js"></script>
+  <script type="text/javascript">
+$(function(){
+	$('#flash').cycle({ 
+		fx:'fade',
+		pager:'#flash_button'
+	});
+})
+</script>
+  <div id="iabout_bg">
+    <div id="iabout_blk">
+      <div id="iabout_menu"> <strong>关于我们</strong> 
+	  <a href='/a/about/'>公司简介</a>
+	  <a href='/a/qiyewenhua/'>企业文化</a>
+	  <a href='/a/zizhirenzheng/'>资质认证</a>
+	  </div>
+      <strong id="iabout_title">公司简介</strong>
+      <div id="iabout">
+        <p>某某家居有限公司是国内率先提出“智能学习桌”概念的科技型创新企业，总部位于广州；主要负责智能人体工程学书桌椅以及配套产品的研发、生产及全球同步营销推广，公司拥有国内一流的研发、生产、营销团队，在探索与实践少儿健康、智能学习桌领域中遥遥领先于同行，特别是其独特创新的产品设计以及差异化的O2O商业模式，彻底颠覆了传统商业思维，重新定义了学习桌椅的行业标准。具有使命感的星博人，在重视自身发展的同时，更关心中国乃至全球的少儿在学习中的健康问题，首要任务就是建立一套让孩子健康成长、快乐学习的整体解决方案...</p>
+      </div>
+    </div>
+  </div>
+  <div id="inews_bg">
+    <div id="inews_blk"> <strong id="inews_title">新闻资讯</strong>
+      <script type="text/javascript" src="inc/scrollpic.js"></script>
+      <p id="inews_menu">
+	  <span>行业新闻</span>&nbsp;/&nbsp;<span>公司新闻</span></p>
+      <div class="inews">
+        <dl class="inews_com">
+          <dt><a href="/a/news/2015/0905/6.html" target="_blank"><img src="/uploads/150906/1-150Z6130P6326.jpg" /></a></dt>
+          <dd><strong><a href="/a/news/2015/0905/6.html" title="好莱客启动招股程序 红星" target="_blank">好莱客启动招股程序 红星</a></strong><span>2015-09-06</span>
+            <p>整体衣柜生产企业好莱客2日启动招股程序，拟公开募资4.29亿元，计划登陆上交所。而另一方面，有消息称，A股上市几经周折的红星美凯龙最快将于二季度末在香港上市。 此外，欧派家...</p>
+            <a href="/a/news/2015/0905/6.html" class="a" target="_blank">查看详情 &gt;&gt;</a></dd>
+        </dl>
+
+        <div class="inews_list" id="inews_list_1">
+          <dl>
+            <dt><a href="/a/news/2015/0905/6.html" target="_blank"><img src="/uploads/150906/1-150Z6130P6326.jpg" /></a></dt>
+            <dd><strong><a href="/a/news/2015/0905/6.html" title="好莱客启动招股程序 红星" target="_blank">好莱客启动招股程序 红星</a></strong><span>2015-09-06</span>
+              <p>整体衣柜生产企业好莱客2日启动招股程序，拟公开募资4.29亿元，计划登陆上交所。而另一方面，有消息称，A股上市几经周折的红星美凯龙最快将于二季度末在香港上市。 此外，欧派家...</p>
+            </dd>
+          </dl>
+<dl>
+            <dt><a href="/a/news/2015/0905/5.html" target="_blank"><img src="/uploads/allimg/150905/1-150Z5234K50-L.jpg" /></a></dt>
+            <dd><strong><a href="/a/news/2015/0905/5.html" title="怎样选购合适的儿童学习" target="_blank">怎样选购合适的儿童学习</a></strong><span>2015-09-05</span>
+              <p>[导读] 如今孩子的成长越来越受家长们的关注了，无论是他们的学习还是健康都牵动着各位家长的心。而学习将伴随着孩子们度过人生中极为关键的时刻，因此家长们会在这里花更多的...</p>
+            </dd>
+          </dl>
+<dl>
+            <dt><a href="/a/news/2015/0905/4.html" target="_blank"><img src="/uploads/allimg/150905/1-150Z5234H00-L.jpg" /></a></dt>
+            <dd><strong><a href="/a/news/2015/0905/4.html" title="第十六届成都家具展开幕" target="_blank">第十六届成都家具展开幕</a></strong><span>2015-09-05</span>
+              <p>第十六届成都国际 家具 工业展览会今日（7月3日）拉开帷幕。展出总面积17万㎡，吸引了1100余家企业参展。 展会上，意大利米兰轻工信息中心国际市场主任Ms.Giovanna Castelina及亚洲家具...</p>
+            </dd>
+          </dl>
+<dl>
+            <dt><a href="/a/news/2015/0905/3.html" target="_blank"><img src="/uploads/allimg/150905/1-150Z52346460-L.jpg" /></a></dt>
+            <dd><strong><a href="/a/news/2015/0905/3.html" title="家具产业正呈现三分天下" target="_blank">家具产业正呈现三分天下</a></strong><span>2015-09-05</span>
+              <p>日前国家统计局公布的数字显示：上半年家具零售额实现1078亿元，比去年同期增长16.5%。 这样的增长速度，跟家具生产企业与零售企业的实际感受有很大不同，难道是统计数据有误吗？...</p>
+            </dd>
+          </dl>
+<dl>
+            <dt><a href="/a/news/2015/0905/2.html" target="_blank"><img src="/uploads/allimg/150905/1-150Z52346100-L.jpg" /></a></dt>
+            <dd><strong><a href="/a/news/2015/0905/2.html" title="花一点时间， 关心孩子的" target="_blank">花一点时间， 关心孩子的</a></strong><span>2015-09-05</span>
+              <p>测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测...</p>
+            </dd>
+          </dl>
+<dl>
+            <dt><a href="/a/news/2015/0905/1.html" target="_blank"><img src="/uploads/allimg/150905/1-150Z52345180-L.jpg" /></a></dt>
+            <dd><strong><a href="/a/news/2015/0905/1.html" title="假日天地直营店今日试营" target="_blank">假日天地直营店今日试营</a></strong><span>2015-09-05</span>
+              <p>日天地位于大运新城核心区域，紧邻城市主干道龙平南路，连接深莞两地，地理位置优越，东临龙岗天安数码新城，南倚城市之肺大运自然公园，北靠官井头水库，西望东莞繁华商业，...</p>
+            </dd>
+          </dl>
+
+        </div>
+        <span class="inews_list_up" id="inews_list_1_up"></span><span class="inews_list_down" id="inews_list_1_down"></span>
+        <script type="text/javascript">var ScrollImage1 = new ScrollPic();ScrollImage1.scrollContId   = "inews_list_1";ScrollImage1.arrLeftId      = "inews_list_1_up";ScrollImage1.arrRightId     = "inews_list_1_down";ScrollImage1.frameWidth     = 424;ScrollImage1.pageWidth      = 438;ScrollImage1.upright        = true;ScrollImage1.speed          = 10;ScrollImage1.space          = 30;ScrollImage1.autoPlay       = true;ScrollImage1.autoPlayTime   = 5;ScrollImage1.circularly     = true;ScrollImage1.initialize();</script>
+      </div>
+      <div class="inews">
+        <span>行业新闻</span>&nbsp;/&nbsp;<span>公司新闻</span></p>
+      <div class="inews">
+        
+        <div class="inews_list" id="inews_list_2">
+          
+        </div>
+        <span class="inews_list_up" id="inews_list_2_up"></span><span class="inews_list_down" id="inews_list_2_down"></span>
+        <script type="text/javascript">var ScrollImage2 = new ScrollPic();ScrollImage2.scrollContId   = "inews_list_2";ScrollImage2.arrLeftId      = "inews_list_2_up";ScrollImage2.arrRightId     = "inews_list_2_down";ScrollImage2.frameWidth     = 424;ScrollImage2.pageWidth      = 438;ScrollImage2.upright        = true;ScrollImage2.speed          = 10;ScrollImage2.space          = 30;ScrollImage2.autoPlay       = true;ScrollImage2.autoPlayTime   = 5;ScrollImage2.circularly     = true;ScrollImage2.initialize();</script>
+      </div>
+    </div>
+  </div>
+  <div id="iproducts_bg">
+    <div id="iproducts_box">
+      <div id="iproducts_title"> <img src="images/iproducts_title.jpg" /><strong>产品专区</strong>
+        <ul id="iproducts_menu">
+          
+		  <li>酷炫学习桌</li>
+		  
+		  <li>摇臂学习桌</li>
+		  
+		  <li>同步学习桌</li>
+		  
+		  <li>经典学习桌</li>
+		  
+		  <li>五爪龙椅</li>
+		  
+		  <li>智慧成长椅</li>
+		  
+		  <li>五彩书架</li>
+		  
+		  <li>收纳柜</li>
+		  
+        </ul>
+      </div>
+    </div>
+    <div class="iproducts_blk">
+      <div class="iproducts anolines">
+        <p><img src="/uploads/allimg/150906/1-150Z6101P00-L.jpg" /><a href="/a/chanpin/2015/0906/17.html" title="经典学习桌JD-FHB系列" target="_blank"></a></p>
+<p><img src="/uploads/allimg/150906/1-150Z60054370-L.jpg" /><a href="/a/chanpin/2015/0906/16.html" title="经典学习桌 JD-FHB系列" target="_blank"></a></p>
+<p><img src="/uploads/allimg/150906/1-150Z60053150-L.jpg" /><a href="/a/chanpin/2015/0906/15.html" title="同步学习桌 TB-FHB系列1" target="_blank"></a></p>
+<p><img src="/uploads/allimg/150906/1-150Z60051490-L.jpg" /><a href="/a/chanpin/2015/0906/14.html" title="同步学习桌 TB-FHB系列" target="_blank"></a></p>
+<p><img src="/uploads/allimg/150906/1-150Z60050270-L.jpg" /><a href="/a/chanpin/2015/0906/13.html" title="摇臂学习桌YB-PY系列" target="_blank"></a></p>
+<p><img src="/uploads/allimg/150906/1-150Z6004I90-L.jpg" /><a href="/a/chanpin/2015/0906/12.html" title="酷炫学习桌 KX-PY系列2" target="_blank"></a></p>
+
+      </div>
+      <div class="clear"></div>
+      <div class="iproducts anolines">
+        
+      </div>
+      <div class="clear"></div>
+      <div class="iproducts anolines">
+        
+      </div>
+      <div class="clear"></div>
+      <div class="iproducts anolines">
+        
+      </div>
+      <div class="clear"></div>
+      <div class="iproducts anolines">
+        
+      </div>
+      <div class="clear"></div>
+      <div class="iproducts anolines">
+        
+      </div>
+      <div class="clear"></div>
+      <div class="iproducts anolines">
+        
+      </div>
+      <div class="clear"></div>
+      <div class="iproducts anolines">
+        
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div id="iphotos_box">
+    <p id="iphotos_title"><img src="images/iphotos_title.jpg" /></p>
+    <div id="iphotos_blk"> <span id="iphotos_button_left">&lt;</span> <span id="iphotos_button_right">&gt;</span>
+      <div id="iphotos">
+        <dl>
+          <dt><a href="/uploads/allimg/150906/1-150Z6115I50-L.jpg" target="_blank"><img src="/uploads/allimg/150906/1-150Z6115I50-L.jpg" title="河北省内专卖店" alt="河北省内专卖店" /></a></dt>
+          <dd><a href="/uploads/allimg/150906/1-150Z6115I50-L.jpg" target="_blank">河北省内专卖店</a></dd>
+        </dl>
+<dl>
+          <dt><a href="/uploads/allimg/150906/1-150Z6115G00-L.jpg" target="_blank"><img src="/uploads/allimg/150906/1-150Z6115G00-L.jpg" title="上海专卖店" alt="上海专卖店" /></a></dt>
+          <dd><a href="/uploads/allimg/150906/1-150Z6115G00-L.jpg" target="_blank">上海专卖店</a></dd>
+        </dl>
+<dl>
+          <dt><a href="/uploads/allimg/150906/1-150Z61156370-L.jpg" target="_blank"><img src="/uploads/allimg/150906/1-150Z61156370-L.jpg" title="江苏省内专卖店" alt="江苏省内专卖店" /></a></dt>
+          <dd><a href="/uploads/allimg/150906/1-150Z61156370-L.jpg" target="_blank">江苏省内专卖店</a></dd>
+        </dl>
+<dl>
+          <dt><a href="/uploads/allimg/150906/1-150Z61156010-L.jpg" target="_blank"><img src="/uploads/allimg/150906/1-150Z61156010-L.jpg" title="山东省内专卖店" alt="山东省内专卖店" /></a></dt>
+          <dd><a href="/uploads/allimg/150906/1-150Z61156010-L.jpg" target="_blank">山东省内专卖店</a></dd>
+        </dl>
+<dl>
+          <dt><a href="/uploads/allimg/150906/1-150Z61155300-L.jpg" target="_blank"><img src="/uploads/allimg/150906/1-150Z61155300-L.jpg" title="江苏省内专卖店-1" alt="江苏省内专卖店-1" /></a></dt>
+          <dd><a href="/uploads/allimg/150906/1-150Z61155300-L.jpg" target="_blank">江苏省内专卖店-1</a></dd>
+        </dl>
+<dl>
+          <dt><a href="/uploads/allimg/150906/1-150Z61154530-L.jpg" target="_blank"><img src="/uploads/allimg/150906/1-150Z61154530-L.jpg" title="安徽省内专卖店-1" alt="安徽省内专卖店-1" /></a></dt>
+          <dd><a href="/uploads/allimg/150906/1-150Z61154530-L.jpg" target="_blank">安徽省内专卖店-1</a></dd>
+        </dl>
+
+      </div>
+    </div>
+    <script type="text/javascript">
+
+		var ScrollImages = new ScrollPic();
+
+		ScrollImages.scrollContId   = "iphotos"; //内容容器ID
+
+		ScrollImages.arrLeftId      = "iphotos_button_left"; //左箭头ID
+
+		ScrollImages.arrRightId     = "iphotos_button_right"; //右箭头ID
+
+		ScrollImages.frameWidth     = 1228; //显示框宽度
+
+		ScrollImages.pageWidth      = 313; //翻页宽度
+
+		ScrollImages.upright        = false; //垂直滚动
+
+		ScrollImages.speed          = 10; //移动速度(单位毫秒，越小越快)
+
+		ScrollImages.space          = 40; //每次移动像素(单位px，越大越快)
+
+		ScrollImages.autoPlay       = true; //自动播放
+
+		ScrollImages.autoPlayTime   = 4; //自动播放间隔时间(秒)
+
+		ScrollImages.circularly     = true;
+
+		ScrollImages.initialize();
+
+		</script>
+  </div>
+   <div id="footer_image_blk">
+    <div id="footer_image"></div>
+  </div>
+  <div id="footer_blk">
+    <div id="footer">
+      <p id="footer_nav">
+	  <a href="/">首 页</a>
+	  <span></span>
+	  
+	  <a href="/a/about/">关于我们</a><span></span>
+	  
+	  <a href="/a/news/">新闻资讯</a><span></span>
+	  
+	  <a href="/a/chanpin/">产品中心</a><span></span>
+	  
+	  <a href="/a/hezuo/">加盟合作</a><span></span>
+	  
+	  <a href="/a/lianxi/">联系我们</a><span></span>
+	  
+      </p>
+      <p id="footer_tdc"><img src="/images/20150529_194542.jpg" />扫一扫，获取更多信息</p>
+      <a href="www.szsinbo.html"><img src="/images/footer_logo.png" id="footer_logo" /></a>
+      <div id="footer_contact">
+        <p><strong>地址：</strong>xx市xx区xx号<br />
+          <strong>电话：</strong>020-00000000&nbsp;&nbsp;&nbsp; 020-00000000<br />
+          <strong>传真：</strong>020-00000000<br />
+          <strong>邮箱：</strong>admin<span style="line-height: 1.8;">@QQ.com</span></p>
+        <p>&nbsp;</p>
+      </div>
+      <div id="footer_content">
+        <p>版权所有：站窝窝 © 2015 Copyright  All Rights Reserved. 闽ICP备12345678号</p>
+      </div>
+      <div id="footer_map">
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NePGmVayDqxXQXZo2cAmNIMV"></script>
+        <div style="width:447px;height:246px;font-size:12px" id="map"></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(114.257211,22.731485),17);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:"",title:"某某家具公司",imageOffset: {width:0,height:3},position:{lat:22.732702,lng:114.25775}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+      var labels = [
+      ];
+      for(var index = 0; index < labels.length; index++){
+        var opt = { position: new BMap.Point(labels[index].position.lng,labels[index].position.lat )};
+        var label = new BMap.Label(labels[index].content,opt);
+        map.addOverlay(label);
+      };
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+    }
+    var map;
+      initMap();
+  </script>
+  <script type="text/javascript" src="qq.php"></script>
+</div>
+<script type="text/javascript">
+
+function iNews(Val){
+
+	$("#inews_menu span").removeClass("inews_menu_over").eq(Val).addClass("inews_menu_over");
+
+	$(".inews").css("right","-2000px").eq(Val).css("right","0px");
+
+}
+
+function iProducts(Val){
+
+	$("#iproducts_menu li").removeClass("iproducts_menu_over").eq(Val).addClass("iproducts_menu_over");
+
+	$(".iproducts").hide().eq(Val).show();
+
+}
+
+$(function(){
+
+	$("#inews_menu span").on("click",function(){iNews($("#inews_menu span").index(this));});
+
+	$("#iproducts_menu li").on("click",function(){iProducts($("#iproducts_menu li").index(this));});
+
+	iNews(0);
+
+	iProducts(0);
+
+});
+
+</script>
+</body>
+</html>

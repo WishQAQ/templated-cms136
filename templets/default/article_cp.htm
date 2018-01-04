@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="/css/style_cn.css" type="text/css" />
+<script type="text/javascript" src="/jquery/jquery-fy.js"></script>
+<script type="text/javascript" src="/inc/function.js"></script>
+<script type="text/javascript">
+
+$(function(){
+
+	$(".editorc img").each(function(){if (parseInt($(this).css("width"))>$(".editorc").width()) $(this).css({"width":"100%","height":"auto"});});
+
+});
+
+</script>
+</head>
+<body>
+<div id="main">
+  {dede:include filename="head.htm"/}
+  <script type="text/javascript">
+$(function(){
+	try{
+		var current=3;
+		$(".nav_out,.nav_over").attr("class","nav_out").eq(current).attr("class","nav_over");
+	}
+	catch(e){
+	}
+	$("#nav li").hover(function(){$(this).find("p").slideToggle(300);});
+});
+</script>
+  <div id="header_mar"></div>
+  <div id="title_menu_bg">
+    <div id="title_menu_blk"><strong id="title_str1">PRODUCTS</strong><strong id="title_str2">产品专区</strong>
+      <p id="title_menu"> {dede:channel row="10" type="son" col="1" currentstyle="<a href='~typelink~' class='title_menu_over'>~typename~</a>" } <a href="[field:typeurl/]">[field:typename/]</a> {/dede:channel} </p>
+    </div>
+  </div>
+  <div id="content">
+    <div id="products_show">
+      <div id="products_image_blk">
+        <p id="products_image"><img src="{dede:field name="litpic"/}" id="products_imageid" /></p>
+      </div>
+      <div id="products_desc_blk">
+        <h1 id="products_name">{dede:field.title/}</h1>
+        <p id="products_price">&yen; {dede:field.jiage/}</p>
+        <p id="products_desc">核心功能：{dede:field.gongneng/}<br />
+          产品规格：{dede:field.guige/}<br />
+          桌面高度：{dede:field.gaodu/}<br />
+          可选颜色：{dede:field.yanse/}</p>
+        <p id="products_button"><a href="即将上线" target="_blank">在线购买</a></p>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div id="showtext">
+      <div class="editorc editorc_tbe">
+        {dede:field.body/}
+      </div>
+    </div>
+    <div id="prenext">
+      <p><strong>上一页：</strong>{dede:prenext get='pre'/}</p>
+      <p><strong>下一页：</strong>{dede:prenext get='next'/}</p>
+      <a href="/a/chanpin/" id="prenext_back">返回列表</a></div>
+  </div>
+  {dede:include filename="footer.htm"/}
+</div>
+</body>
+</html>
